@@ -3,53 +3,43 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>RestfulLinux: RFDevice.h源文件</title>
-
+<meta name="generator" content="Doxygen 1.8.8"/>
+<title>RestfulLinux: RFDevice.h 源文件</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
-<link href="doxygen.css" rel="stylesheet" type="text/css" />
-
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
   $(document).ready(function() { searchBox.OnSelectItem(0); });
 </script>
-
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-<div id="top"><!-- do not remove this div! -->
-
-
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
-  
-  
   <td style="padding-left: 0.5em;">
    <div id="projectname">RestfulLinux
    &#160;<span id="projectnumber">1.0.0</span>
    </div>
-   
   </td>
-  
-  
-  
  </tr>
  </tbody>
 </table>
 </div>
-
-<!-- 制作者 Doxygen 1.7.6.1 -->
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.8 -->
 <script type="text/javascript">
 var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>首页</span></a></li>
-      <li><a href="annotated.html"><span>数据结构</span></a></li>
+      <li><a href="annotated.html"><span>结构体</span></a></li>
       <li class="current"><a href="files.html"><span>文件</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -75,121 +65,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
       <li><a href="globals.html"><span>全局定义</span></a></li>
     </ul>
   </div>
-</div>
-<div class="header">
-  <div class="headertitle">
-<div class="title">RFDevice.h</div>  </div>
-</div><!--header-->
-<div class="contents">
-<a href="RFDevice_8h.html">浏览该文件的文档。</a><div class="fragment"><pre class="fragment"><a name="l00001"></a>00001 
-<a name="l00012"></a>00012 <span class="preprocessor">#ifndef __RFDEVICE_H__ </span>
-<a name="l00013"></a>00013 <span class="preprocessor"></span><span class="preprocessor">#define __RFDEVICE_H__</span>
-<a name="l00014"></a>00014 <span class="preprocessor"></span>
-<a name="l00015"></a>00015 <span class="comment">/*****************************************************************************/</span>
-<a name="l00016"></a>00016 <span class="comment">/* Includes                                                                  */</span>
-<a name="l00017"></a>00017 <span class="comment">/*****************************************************************************/</span>
-<a name="l00018"></a>00018 <span class="preprocessor">#include &lt;<a class="code" href="osDataType_8h.html" title="general data type definition .">osAdaption/osDataType.h</a>&gt;</span>
-<a name="l00019"></a>00019 
-<a name="l00020"></a>00020 <span class="preprocessor">#ifdef _cplusplus</span>
-<a name="l00021"></a>00021 <span class="preprocessor"></span><span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span>{
-<a name="l00022"></a>00022 <span class="preprocessor">#endif   </span>
-<a name="l00023"></a>00023 <span class="preprocessor"></span>
-<a name="l00024"></a>00024 
-<a name="l00025"></a>00025 <span class="comment">/*****************************************************************************/</span>
-<a name="l00026"></a>00026 <span class="comment">/* External Definition（Constant and Macro )                                 */</span>
-<a name="l00027"></a>00027 <span class="comment">/*****************************************************************************/</span>
-<a name="l00029"></a><a class="code" href="RFDevice_8h.html#a31e94f1a75e55e777a9271ad02f0e171">00029</a> <span class="preprocessor">#define DEVICE_NAME_LEN_MAX 15</span>
-<a name="l00030"></a>00030 <span class="preprocessor"></span>
-<a name="l00031"></a><a class="code" href="RFDevice_8h.html#a9a0595cbc9ab486fdc0dc82edbbe4f5b">00031</a> <span class="preprocessor">#define DEVICE_DESC_LEN_MAX 127</span>
-<a name="l00032"></a>00032 <span class="preprocessor"></span>
-<a name="l00033"></a><a class="code" href="RFDevice_8h.html#adc7052524e5e4b14dae9691bc70ee162">00033</a> <span class="preprocessor">#define DEVICE_TAGLIST_LEN_MAX 63</span>
-<a name="l00034"></a>00034 <span class="preprocessor"></span>
-<a name="l00035"></a><a class="code" href="RFDevice_8h.html#a4c3e4596a4079965b008f13658afadd0">00035</a> <span class="preprocessor">#define DEVICE_ID_LEN_MAX   15</span>
-<a name="l00036"></a>00036 <span class="preprocessor"></span>
-<a name="l00037"></a><a class="code" href="RFDevice_8h.html#a3b20e0198c2eafa93ca5b0c48f6db8a3">00037</a> <span class="preprocessor">#define DEVICE_API_KEY_LEN_MAX 63</span>
-<a name="l00038"></a>00038 <span class="preprocessor"></span>
-<a name="l00043"></a><a class="code" href="RFDevice_8h.html#adda3539feb787aaffe0c6fd6871f9e96">00043</a> <span class="preprocessor">#define DEVICEINFO_MASK_TITLE   0x0001</span>
-<a name="l00044"></a>00044 <span class="preprocessor"></span>
-<a name="l00045"></a><a class="code" href="RFDevice_8h.html#aa27f1c71a41489022953fe8326f39ea8">00045</a> <span class="preprocessor">#define DEVICEINFO_MASK_DESC    0x0002</span>
-<a name="l00046"></a>00046 <span class="preprocessor"></span>
-<a name="l00047"></a><a class="code" href="RFDevice_8h.html#a816a485e3b0120a6ae402f62a1543bec">00047</a> <span class="preprocessor">#define DEVICEINFO_MASK_PRIVATE 0x0004</span>
-<a name="l00048"></a>00048 <span class="preprocessor"></span>
-<a name="l00049"></a><a class="code" href="RFDevice_8h.html#aea3967420653246266bf5c15ab9f4e9e">00049</a> <span class="preprocessor">#define DEVICEINFO_MASK_TAGLIST 0x0008</span>
-<a name="l00050"></a>00050 <span class="preprocessor"></span>
-<a name="l00051"></a><a class="code" href="RFDevice_8h.html#a90e50ca5b5a4a84493519eb2cf232678">00051</a> <span class="preprocessor">#define DEVICEINFO_MASK_LOCATION    0x0010</span>
-<a name="l00052"></a>00052 <span class="preprocessor"></span>
-<a name="l00053"></a><a class="code" href="RFDevice_8h.html#a8effad4c0d9279e504639724fc6739d4">00053</a> <span class="preprocessor">#define DEVICEINFO_MASK_ALL     0xFFFF</span>
-<a name="l00054"></a>00054 <span class="preprocessor"></span>
-<a name="l00056"></a>00056 <span class="preprocessor">#if 0</span>
-<a name="l00057"></a>00057 <span class="preprocessor"></span><span class="comment">/* 指定模糊查询设备时使用的参数项*/</span>
-<a name="l00058"></a>00058 <span class="preprocessor">#define DEVICEVIEW_MASK_KEYWORD 0x0001</span>
-<a name="l00059"></a>00059 <span class="preprocessor"></span><span class="preprocessor">#define DEVICEVIEW_MASK_TAG     0x0002</span>
-<a name="l00060"></a>00060 <span class="preprocessor"></span><span class="preprocessor">#define DEVICEVIEW_MASK_PRIVATE 0x0004</span>
-<a name="l00061"></a>00061 <span class="preprocessor"></span><span class="preprocessor">#define DEVICEVIEW_MASK_PAGE    0x0008</span>
-<a name="l00062"></a>00062 <span class="preprocessor"></span><span class="preprocessor">#define DEVICEVIEW_MASK_PERPAGE 0x0010</span>
-<a name="l00063"></a>00063 <span class="preprocessor"></span><span class="preprocessor">#define DEVICEVIEW_MASK_DEVICEID    0x0020</span>
-<a name="l00064"></a>00064 <span class="preprocessor"></span><span class="preprocessor">#define DEVICEVIEW_MASK_ALL     0xFFFF</span>
-<a name="l00065"></a>00065 <span class="preprocessor"></span><span class="preprocessor">#endif</span>
-<a name="l00066"></a>00066 <span class="preprocessor"></span>
-<a name="l00067"></a>00067 <span class="comment">/*****************************************************************************/</span>
-<a name="l00068"></a>00068 <span class="comment">/* External Structures, Enum and Typedefs                                    */</span>
-<a name="l00069"></a>00069 <span class="comment">/*****************************************************************************/</span>
-<a name="l00073"></a><a class="code" href="structLocationInfo.html">00073</a> <span class="keyword">typedef</span> <span class="keyword">struct</span>
-<a name="l00074"></a>00074 {
-<a name="l00076"></a><a class="code" href="structLocationInfo.html#a11ab0ec19804266cbb6b6e6121980f17">00076</a>     <span class="keywordtype">float</span> <a class="code" href="structLocationInfo.html#a11ab0ec19804266cbb6b6e6121980f17">ele</a>;
-<a name="l00078"></a><a class="code" href="structLocationInfo.html#ae55f065c95e023aa6c2514b2b9ad4a22">00078</a>     <span class="keywordtype">float</span> <a class="code" href="structLocationInfo.html#ae55f065c95e023aa6c2514b2b9ad4a22">lat</a>;
-<a name="l00080"></a><a class="code" href="structLocationInfo.html#af59ee077fefdb65db12a1543dde1d21f">00080</a>     <span class="keywordtype">float</span> <a class="code" href="structLocationInfo.html#af59ee077fefdb65db12a1543dde1d21f">lon</a>;
-<a name="l00081"></a>00081 } <a class="code" href="structLocationInfo.html" title="位置信息定义">LocationInfo</a>, *<a class="code" href="structLocationInfo.html" title="位置信息定义">pLocationInfo</a>;
-<a name="l00082"></a>00082 
-<a name="l00086"></a><a class="code" href="structRFDeviceConfig.html">00086</a> <span class="keyword">typedef</span> <span class="keyword">struct</span>
-<a name="l00087"></a>00087 {
-<a name="l00089"></a><a class="code" href="structRFDeviceConfig.html#ab8ab5c9dd84e9ef083e93db71e3f607a">00089</a>     int8 deviceTitle[<a class="code" href="RFDevice_8h.html#a31e94f1a75e55e777a9271ad02f0e171">DEVICE_NAME_LEN_MAX</a> + 1];
-<a name="l00091"></a><a class="code" href="structRFDeviceConfig.html#a1cb83e7fa72ee2aaa8ed321a0465a2d3">00091</a>     int8 deviceDesc[<a class="code" href="RFDevice_8h.html#a9a0595cbc9ab486fdc0dc82edbbe4f5b">DEVICE_DESC_LEN_MAX</a> + 1];
-<a name="l00093"></a><a class="code" href="structRFDeviceConfig.html#ad73575801d670326a8730303b73de368">00093</a>     int8 deviceTagList[<a class="code" href="RFDevice_8h.html#adc7052524e5e4b14dae9691bc70ee162">DEVICE_TAGLIST_LEN_MAX</a> + 1];
-<a name="l00095"></a><a class="code" href="structRFDeviceConfig.html#aa8ee67e2247ea1976c1403b022311e31">00095</a>     int8 APIKey[<a class="code" href="RFDevice_8h.html#a3b20e0198c2eafa93ca5b0c48f6db8a3">DEVICE_API_KEY_LEN_MAX</a> + 1];
-<a name="l00097"></a><a class="code" href="structRFDeviceConfig.html#a65d98624e4939fb4c67140ed9d2d3927">00097</a>     <a class="code" href="structLocationInfo.html" title="位置信息定义">LocationInfo</a> <a class="code" href="structRFDeviceConfig.html#a65d98624e4939fb4c67140ed9d2d3927">locInfo</a>;
-<a name="l00099"></a><a class="code" href="structRFDeviceConfig.html#a06ca83c377cc558bf0a25853bfe9d398">00099</a>     boolValue <a class="code" href="structRFDeviceConfig.html#a06ca83c377cc558bf0a25853bfe9d398">isPrivate</a>;
-<a name="l00100"></a>00100 } <a class="code" href="structRFDeviceConfig.html" title="设备配置信息定义">RFDeviceConfig</a>, *<a class="code" href="structRFDeviceConfig.html" title="设备配置信息定义">pRFDeviceConfig</a>;
-<a name="l00101"></a>00101 
-<a name="l00105"></a><a class="code" href="structRFDeviceInfo.html">00105</a> <span class="keyword">typedef</span> <span class="keyword">struct</span>
-<a name="l00106"></a>00106 {
-<a name="l00108"></a><a class="code" href="structRFDeviceInfo.html#aadac3f4f69381d631ec099c556bf7ba7">00108</a>     <a class="code" href="structRFDeviceConfig.html" title="设备配置信息定义">RFDeviceConfig</a> <a class="code" href="structRFDeviceInfo.html#aadac3f4f69381d631ec099c556bf7ba7">devConfig</a>;
-<a name="l00110"></a><a class="code" href="structRFDeviceInfo.html#a20f5f7b1e97c312c0b50b36571b87689">00110</a>     int8 deviceID[<a class="code" href="RFDevice_8h.html#a4c3e4596a4079965b008f13658afadd0">DEVICE_ID_LEN_MAX</a> + 1];
-<a name="l00112"></a><a class="code" href="structRFDeviceInfo.html#a5483620c5bc35ffd217c88da775d03fc">00112</a>     uint32 <a class="code" href="structRFDeviceInfo.html#a5483620c5bc35ffd217c88da775d03fc">createTime</a>;
-<a name="l00113"></a>00113 } <a class="code" href="structRFDeviceInfo.html" title="设备属性定义">RFDeviceInfo</a>, *<a class="code" href="structRFDeviceInfo.html" title="设备属性定义">pRFDeviceInfo</a>;
-<a name="l00114"></a>00114 
-<a name="l00115"></a>00115 <span class="preprocessor">#include &lt;<a class="code" href="RFDeviceDetails_8h.html" title="设备明细结构定义">RFDeviceDetails.h</a>&gt;</span>
-<a name="l00116"></a>00116 
-<a name="l00117"></a>00117 <span class="comment">/*****************************************************************************/</span>
-<a name="l00118"></a>00118 <span class="comment">/* External Function Prototypes                                              */</span>
-<a name="l00119"></a>00119 <span class="comment">/*****************************************************************************/</span>
-<a name="l00120"></a>00120 
-<a name="l00131"></a>00131 int32 <a class="code" href="RFDevice_8h.html#a02926dbce65bd9880b03be1af5cbfa77" title="新增设备。设备创建成功后，用户应保存返回的设备ID，当下一次上线时， 无需重新调用设备创建接口，直接使用RFDevice_Init 即可。 本接口包含RFDevice_Init 的功能。...">RFDevice_Create</a>(<a class="code" href="structRFDeviceConfig.html" title="设备配置信息定义">RFDeviceConfig</a> *devConfig, int8 *deviceID);
-<a name="l00132"></a>00132 
-<a name="l00142"></a>00142 int32 <a class="code" href="RFDevice_8h.html#a8c09fa856caf5347b63dafbf9ed1df4a" title="设备信息初始化，和RFDevice_Create 接口只需调用其中一个。需要向云端 添加设备时用Create接口，其它情况用Init接口">RFDevice_Init</a>(int8 *deviceID, int8 *masterKey);
-<a name="l00143"></a>00143 
-<a name="l00153"></a>00153 int32 <a class="code" href="RFDevice_8h.html#a2adeb6c8fdf317ce85ac17a6a4cfa681" title="更新设备信息">RFDevice_UpdateInfo</a>(<a class="code" href="structRFDeviceConfig.html" title="设备配置信息定义">RFDeviceConfig</a> *devConfig, uint32 updateFlag);
-<a name="l00154"></a>00154 
-<a name="l00155"></a>00155 
-<a name="l00164"></a>00164 int32 <a class="code" href="RFDevice_8h.html#aa827474024c22d75e07df176c60acc07" title="查询设备，只限查询本设备">RFDevice_View</a>(int8 *APIKey, <a class="code" href="structRFDeviceDetails.html" title="设备详细信息结构定义">RFDeviceDetails</a> *details);
-<a name="l00165"></a>00165 
-<a name="l00171"></a>00171 <span class="keywordtype">void</span> <a class="code" href="RFDevice_8h.html#ac52c59eec134c6877e8dde7b1b18ac02" title="执行RFDevice_View 操作后，必须调用该接口释放空间">RFDevice_FreeDetails</a>(<a class="code" href="structRFDeviceDetails.html" title="设备详细信息结构定义">RFDeviceDetails</a> *details);
-<a name="l00172"></a>00172 
-<a name="l00180"></a>00180 int32 <a class="code" href="RFDevice_8h.html#afefa76d28d4681972e9c99333b0bbf8e" title="从云端删除指定设备">RFDevice_Delete</a>(int8 *APIKey);
-<a name="l00181"></a>00181 
-<a name="l00182"></a>00182 <span class="preprocessor">#ifdef _cplusplus</span>
-<a name="l00183"></a>00183 <span class="preprocessor"></span>}
-<a name="l00184"></a>00184 <span class="preprocessor">#endif   </span>
-<a name="l00185"></a>00185 <span class="preprocessor"></span>
-<a name="l00186"></a>00186 <span class="preprocessor">#endif</span>
-<a name="l00187"></a>00187 <span class="preprocessor"></span>
-</pre></div></div><!-- contents -->
+</div><!-- top -->
 <!-- window showing the filter options -->
 <div id="MSearchSelectWindow"
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>数据结构</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>结构体</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -198,13 +80,143 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </iframe>
 </div>
 
-
-
+<div class="header">
+  <div class="headertitle">
+<div class="title">RFDevice.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="RFDevice_8h.html">浏览该文件的文档.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#ifndef __RFDEVICE_H__ </span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#define __RFDEVICE_H__</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="comment">/*****************************************************************************/</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="comment">/* Includes                                                                  */</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="comment">/*****************************************************************************/</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="osDataType_8h.html">osAdaption/osDataType.h</a>&gt;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="preprocessor">#ifdef _cplusplus</span></div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">extern</span> <span class="stringliteral">&quot;C&quot;</span>{</div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="preprocessor">#endif   </span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="comment">/*****************************************************************************/</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="comment">/* External Definition（Constant and Macro )                                 */</span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="comment">/*****************************************************************************/</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="RFDevice_8h.html#a31e94f1a75e55e777a9271ad02f0e171">   29</a></span>&#160;<span class="preprocessor">#define DEVICE_NAME_LEN_MAX 15</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="RFDevice_8h.html#a9a0595cbc9ab486fdc0dc82edbbe4f5b">   31</a></span>&#160;<span class="preprocessor">#define DEVICE_DESC_LEN_MAX 127</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="RFDevice_8h.html#adc7052524e5e4b14dae9691bc70ee162">   33</a></span>&#160;<span class="preprocessor">#define DEVICE_TAGLIST_LEN_MAX 63</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="RFDevice_8h.html#a4c3e4596a4079965b008f13658afadd0">   35</a></span>&#160;<span class="preprocessor">#define DEVICE_ID_LEN_MAX   15</span></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="RFDevice_8h.html#a3b20e0198c2eafa93ca5b0c48f6db8a3">   37</a></span>&#160;<span class="preprocessor">#define DEVICE_API_KEY_LEN_MAX 63</span></div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="RFDevice_8h.html#adda3539feb787aaffe0c6fd6871f9e96">   43</a></span>&#160;<span class="preprocessor">#define DEVICEINFO_MASK_TITLE   0x0001</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="RFDevice_8h.html#aa27f1c71a41489022953fe8326f39ea8">   45</a></span>&#160;<span class="preprocessor">#define DEVICEINFO_MASK_DESC    0x0002</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="RFDevice_8h.html#a816a485e3b0120a6ae402f62a1543bec">   47</a></span>&#160;<span class="preprocessor">#define DEVICEINFO_MASK_PRIVATE 0x0004</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="RFDevice_8h.html#aea3967420653246266bf5c15ab9f4e9e">   49</a></span>&#160;<span class="preprocessor">#define DEVICEINFO_MASK_TAGLIST 0x0008</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="RFDevice_8h.html#a90e50ca5b5a4a84493519eb2cf232678">   51</a></span>&#160;<span class="preprocessor">#define DEVICEINFO_MASK_LOCATION    0x0010</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="RFDevice_8h.html#a8effad4c0d9279e504639724fc6739d4">   53</a></span>&#160;<span class="preprocessor">#define DEVICEINFO_MASK_ALL     0xFFFF</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="preprocessor">#if 0</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">/* 指定模糊查询设备时使用的参数项*/</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#define DEVICEVIEW_MASK_KEYWORD 0x0001</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="preprocessor">#define DEVICEVIEW_MASK_TAG     0x0002</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;<span class="preprocessor">#define DEVICEVIEW_MASK_PRIVATE 0x0004</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;<span class="preprocessor">#define DEVICEVIEW_MASK_PAGE    0x0008</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="preprocessor">#define DEVICEVIEW_MASK_PERPAGE 0x0010</span></div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="preprocessor">#define DEVICEVIEW_MASK_DEVICEID    0x0020</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;<span class="preprocessor">#define DEVICEVIEW_MASK_ALL     0xFFFF</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;<span class="comment">/*****************************************************************************/</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">/* External Structures, Enum and Typedefs                                    */</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">/*****************************************************************************/</span></div>
+<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="structLocationInfo.html">   73</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;{</div>
+<div class="line"><a name="l00076"></a><span class="lineno"><a class="line" href="structLocationInfo.html#a11ab0ec19804266cbb6b6e6121980f17">   76</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="structLocationInfo.html#a11ab0ec19804266cbb6b6e6121980f17">ele</a>;</div>
+<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="structLocationInfo.html#ae55f065c95e023aa6c2514b2b9ad4a22">   78</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="structLocationInfo.html#ae55f065c95e023aa6c2514b2b9ad4a22">lat</a>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="structLocationInfo.html#af59ee077fefdb65db12a1543dde1d21f">   80</a></span>&#160;    <span class="keywordtype">float</span> <a class="code" href="structLocationInfo.html#af59ee077fefdb65db12a1543dde1d21f">lon</a>;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;} <a class="code" href="structLocationInfo.html">LocationInfo</a>, *<a class="code" href="structLocationInfo.html">pLocationInfo</a>;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno"><a class="line" href="structRFDeviceConfig.html">   86</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;{</div>
+<div class="line"><a name="l00089"></a><span class="lineno"><a class="line" href="structRFDeviceConfig.html#ab8ab5c9dd84e9ef083e93db71e3f607a">   89</a></span>&#160;    int8 deviceTitle[<a class="code" href="RFDevice_8h.html#a31e94f1a75e55e777a9271ad02f0e171">DEVICE_NAME_LEN_MAX</a> + 1];</div>
+<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="structRFDeviceConfig.html#a1cb83e7fa72ee2aaa8ed321a0465a2d3">   91</a></span>&#160;    int8 deviceDesc[<a class="code" href="RFDevice_8h.html#a9a0595cbc9ab486fdc0dc82edbbe4f5b">DEVICE_DESC_LEN_MAX</a> + 1];</div>
+<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="structRFDeviceConfig.html#ad73575801d670326a8730303b73de368">   93</a></span>&#160;    int8 deviceTagList[<a class="code" href="RFDevice_8h.html#adc7052524e5e4b14dae9691bc70ee162">DEVICE_TAGLIST_LEN_MAX</a> + 1];</div>
+<div class="line"><a name="l00095"></a><span class="lineno"><a class="line" href="structRFDeviceConfig.html#aa8ee67e2247ea1976c1403b022311e31">   95</a></span>&#160;    int8 APIKey[<a class="code" href="RFDevice_8h.html#a3b20e0198c2eafa93ca5b0c48f6db8a3">DEVICE_API_KEY_LEN_MAX</a> + 1];</div>
+<div class="line"><a name="l00097"></a><span class="lineno"><a class="line" href="structRFDeviceConfig.html#a65d98624e4939fb4c67140ed9d2d3927">   97</a></span>&#160;    <a class="code" href="structLocationInfo.html">LocationInfo</a> <a class="code" href="structRFDeviceConfig.html#a65d98624e4939fb4c67140ed9d2d3927">locInfo</a>;</div>
+<div class="line"><a name="l00099"></a><span class="lineno"><a class="line" href="structRFDeviceConfig.html#a06ca83c377cc558bf0a25853bfe9d398">   99</a></span>&#160;    boolValue <a class="code" href="structRFDeviceConfig.html#a06ca83c377cc558bf0a25853bfe9d398">isPrivate</a>;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;} <a class="code" href="structRFDeviceConfig.html">RFDeviceConfig</a>, *<a class="code" href="structRFDeviceConfig.html">pRFDeviceConfig</a>;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00105"></a><span class="lineno"><a class="line" href="structRFDeviceInfo.html">  105</a></span>&#160;<span class="keyword">typedef</span> <span class="keyword">struct</span></div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;{</div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="structRFDeviceInfo.html#aadac3f4f69381d631ec099c556bf7ba7">  108</a></span>&#160;    <a class="code" href="structRFDeviceConfig.html">RFDeviceConfig</a> <a class="code" href="structRFDeviceInfo.html#aadac3f4f69381d631ec099c556bf7ba7">devConfig</a>;</div>
+<div class="line"><a name="l00110"></a><span class="lineno"><a class="line" href="structRFDeviceInfo.html#a20f5f7b1e97c312c0b50b36571b87689">  110</a></span>&#160;    int8 deviceID[<a class="code" href="RFDevice_8h.html#a4c3e4596a4079965b008f13658afadd0">DEVICE_ID_LEN_MAX</a> + 1];</div>
+<div class="line"><a name="l00112"></a><span class="lineno"><a class="line" href="structRFDeviceInfo.html#a5483620c5bc35ffd217c88da775d03fc">  112</a></span>&#160;    uint32 <a class="code" href="structRFDeviceInfo.html#a5483620c5bc35ffd217c88da775d03fc">createTime</a>;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;} <a class="code" href="structRFDeviceInfo.html">RFDeviceInfo</a>, *<a class="code" href="structRFDeviceInfo.html">pRFDeviceInfo</a>;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="preprocessor">#include &lt;<a class="code" href="RFDeviceDetails_8h.html">RFDeviceDetails.h</a>&gt;</span></div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;<span class="comment">/*****************************************************************************/</span></div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;<span class="comment">/* External Function Prototypes                                              */</span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;<span class="comment">/*****************************************************************************/</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;int32 <a class="code" href="RFDevice_8h.html#a02926dbce65bd9880b03be1af5cbfa77">RFDevice_Create</a>(<a class="code" href="structRFDeviceConfig.html">RFDeviceConfig</a> *devConfig, int8 *deviceID);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;int32 <a class="code" href="RFDevice_8h.html#a8c09fa856caf5347b63dafbf9ed1df4a">RFDevice_Init</a>(int8 *deviceID, int8 *masterKey);</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;int32 <a class="code" href="RFDevice_8h.html#a2adeb6c8fdf317ce85ac17a6a4cfa681">RFDevice_UpdateInfo</a>(<a class="code" href="structRFDeviceConfig.html">RFDeviceConfig</a> *devConfig, uint32 updateFlag);</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;int32 <a class="code" href="RFDevice_8h.html#aa827474024c22d75e07df176c60acc07">RFDevice_View</a>(int8 *APIKey, <a class="code" href="structRFDeviceDetails.html">RFDeviceDetails</a> *details);</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;<span class="keywordtype">void</span> <a class="code" href="RFDevice_8h.html#ac52c59eec134c6877e8dde7b1b18ac02">RFDevice_FreeDetails</a>(<a class="code" href="structRFDeviceDetails.html">RFDeviceDetails</a> *details);</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;int32 <a class="code" href="RFDevice_8h.html#afefa76d28d4681972e9c99333b0bbf8e">RFDevice_Delete</a>(int8 *APIKey);</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;<span class="preprocessor">#ifdef _cplusplus</span></div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;}</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;<span class="preprocessor">#endif   </span></div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;</div>
+<div class="ttc" id="structRFDeviceInfo_html_aadac3f4f69381d631ec099c556bf7ba7"><div class="ttname"><a href="structRFDeviceInfo.html#aadac3f4f69381d631ec099c556bf7ba7">RFDeviceInfo::devConfig</a></div><div class="ttdeci">RFDeviceConfig devConfig</div><div class="ttdef"><b>Definition:</b> RFDevice.h:108</div></div>
+<div class="ttc" id="RFDevice_8h_html_afefa76d28d4681972e9c99333b0bbf8e"><div class="ttname"><a href="RFDevice_8h.html#afefa76d28d4681972e9c99333b0bbf8e">RFDevice_Delete</a></div><div class="ttdeci">int32 RFDevice_Delete(int8 *APIKey)</div><div class="ttdoc">从云端删除指定设备 </div></div>
+<div class="ttc" id="RFDevice_8h_html_a2adeb6c8fdf317ce85ac17a6a4cfa681"><div class="ttname"><a href="RFDevice_8h.html#a2adeb6c8fdf317ce85ac17a6a4cfa681">RFDevice_UpdateInfo</a></div><div class="ttdeci">int32 RFDevice_UpdateInfo(RFDeviceConfig *devConfig, uint32 updateFlag)</div><div class="ttdoc">更新设备信息 </div></div>
+<div class="ttc" id="structRFDeviceConfig_html"><div class="ttname"><a href="structRFDeviceConfig.html">RFDeviceConfig</a></div><div class="ttdoc">设备配置信息定义 </div><div class="ttdef"><b>Definition:</b> RFDevice.h:86</div></div>
+<div class="ttc" id="RFDevice_8h_html_aa827474024c22d75e07df176c60acc07"><div class="ttname"><a href="RFDevice_8h.html#aa827474024c22d75e07df176c60acc07">RFDevice_View</a></div><div class="ttdeci">int32 RFDevice_View(int8 *APIKey, RFDeviceDetails *details)</div><div class="ttdoc">查询设备，只限查询本设备 </div></div>
+<div class="ttc" id="structRFDeviceConfig_html_a65d98624e4939fb4c67140ed9d2d3927"><div class="ttname"><a href="structRFDeviceConfig.html#a65d98624e4939fb4c67140ed9d2d3927">RFDeviceConfig::locInfo</a></div><div class="ttdeci">LocationInfo locInfo</div><div class="ttdef"><b>Definition:</b> RFDevice.h:97</div></div>
+<div class="ttc" id="RFDevice_8h_html_a3b20e0198c2eafa93ca5b0c48f6db8a3"><div class="ttname"><a href="RFDevice_8h.html#a3b20e0198c2eafa93ca5b0c48f6db8a3">DEVICE_API_KEY_LEN_MAX</a></div><div class="ttdeci">#define DEVICE_API_KEY_LEN_MAX</div><div class="ttdef"><b>Definition:</b> RFDevice.h:37</div></div>
+<div class="ttc" id="structRFDeviceInfo_html_a5483620c5bc35ffd217c88da775d03fc"><div class="ttname"><a href="structRFDeviceInfo.html#a5483620c5bc35ffd217c88da775d03fc">RFDeviceInfo::createTime</a></div><div class="ttdeci">uint32 createTime</div><div class="ttdef"><b>Definition:</b> RFDevice.h:112</div></div>
+<div class="ttc" id="structRFDeviceConfig_html_a06ca83c377cc558bf0a25853bfe9d398"><div class="ttname"><a href="structRFDeviceConfig.html#a06ca83c377cc558bf0a25853bfe9d398">RFDeviceConfig::isPrivate</a></div><div class="ttdeci">boolValue isPrivate</div><div class="ttdef"><b>Definition:</b> RFDevice.h:99</div></div>
+<div class="ttc" id="RFDevice_8h_html_a31e94f1a75e55e777a9271ad02f0e171"><div class="ttname"><a href="RFDevice_8h.html#a31e94f1a75e55e777a9271ad02f0e171">DEVICE_NAME_LEN_MAX</a></div><div class="ttdeci">#define DEVICE_NAME_LEN_MAX</div><div class="ttdef"><b>Definition:</b> RFDevice.h:29</div></div>
+<div class="ttc" id="structLocationInfo_html_ae55f065c95e023aa6c2514b2b9ad4a22"><div class="ttname"><a href="structLocationInfo.html#ae55f065c95e023aa6c2514b2b9ad4a22">LocationInfo::lat</a></div><div class="ttdeci">float lat</div><div class="ttdef"><b>Definition:</b> RFDevice.h:78</div></div>
+<div class="ttc" id="RFDeviceDetails_8h_html"><div class="ttname"><a href="RFDeviceDetails_8h.html">RFDeviceDetails.h</a></div><div class="ttdoc">设备明细结构定义 </div></div>
+<div class="ttc" id="RFDevice_8h_html_a02926dbce65bd9880b03be1af5cbfa77"><div class="ttname"><a href="RFDevice_8h.html#a02926dbce65bd9880b03be1af5cbfa77">RFDevice_Create</a></div><div class="ttdeci">int32 RFDevice_Create(RFDeviceConfig *devConfig, int8 *deviceID)</div><div class="ttdoc">新增设备。设备创建成功后，用户应保存返回的设备ID，当下一次上线时， �...</div></div>
+<div class="ttc" id="structLocationInfo_html"><div class="ttname"><a href="structLocationInfo.html">LocationInfo</a></div><div class="ttdoc">位置信息定义 </div><div class="ttdef"><b>Definition:</b> RFDevice.h:73</div></div>
+<div class="ttc" id="structLocationInfo_html_a11ab0ec19804266cbb6b6e6121980f17"><div class="ttname"><a href="structLocationInfo.html#a11ab0ec19804266cbb6b6e6121980f17">LocationInfo::ele</a></div><div class="ttdeci">float ele</div><div class="ttdef"><b>Definition:</b> RFDevice.h:76</div></div>
+<div class="ttc" id="RFDevice_8h_html_a4c3e4596a4079965b008f13658afadd0"><div class="ttname"><a href="RFDevice_8h.html#a4c3e4596a4079965b008f13658afadd0">DEVICE_ID_LEN_MAX</a></div><div class="ttdeci">#define DEVICE_ID_LEN_MAX</div><div class="ttdef"><b>Definition:</b> RFDevice.h:35</div></div>
+<div class="ttc" id="RFDevice_8h_html_ac52c59eec134c6877e8dde7b1b18ac02"><div class="ttname"><a href="RFDevice_8h.html#ac52c59eec134c6877e8dde7b1b18ac02">RFDevice_FreeDetails</a></div><div class="ttdeci">void RFDevice_FreeDetails(RFDeviceDetails *details)</div><div class="ttdoc">执行RFDevice_View 操作后，必须调用该接口释放空间 </div></div>
+<div class="ttc" id="structRFDeviceInfo_html"><div class="ttname"><a href="structRFDeviceInfo.html">RFDeviceInfo</a></div><div class="ttdoc">设备属性定义 </div><div class="ttdef"><b>Definition:</b> RFDevice.h:105</div></div>
+<div class="ttc" id="RFDevice_8h_html_a9a0595cbc9ab486fdc0dc82edbbe4f5b"><div class="ttname"><a href="RFDevice_8h.html#a9a0595cbc9ab486fdc0dc82edbbe4f5b">DEVICE_DESC_LEN_MAX</a></div><div class="ttdeci">#define DEVICE_DESC_LEN_MAX</div><div class="ttdef"><b>Definition:</b> RFDevice.h:31</div></div>
+<div class="ttc" id="structRFDeviceDetails_html"><div class="ttname"><a href="structRFDeviceDetails.html">RFDeviceDetails</a></div><div class="ttdoc">设备详细信息结构定义 </div><div class="ttdef"><b>Definition:</b> RFDeviceDetails.h:88</div></div>
+<div class="ttc" id="RFDevice_8h_html_adc7052524e5e4b14dae9691bc70ee162"><div class="ttname"><a href="RFDevice_8h.html#adc7052524e5e4b14dae9691bc70ee162">DEVICE_TAGLIST_LEN_MAX</a></div><div class="ttdeci">#define DEVICE_TAGLIST_LEN_MAX</div><div class="ttdef"><b>Definition:</b> RFDevice.h:33</div></div>
+<div class="ttc" id="osDataType_8h_html"><div class="ttname"><a href="osDataType_8h.html">osDataType.h</a></div><div class="ttdoc">general data type definition . </div></div>
+<div class="ttc" id="RFDevice_8h_html_a8c09fa856caf5347b63dafbf9ed1df4a"><div class="ttname"><a href="RFDevice_8h.html#a8c09fa856caf5347b63dafbf9ed1df4a">RFDevice_Init</a></div><div class="ttdeci">int32 RFDevice_Init(int8 *deviceID, int8 *masterKey)</div><div class="ttdoc">设备信息初始化，和RFDevice_Create 接口只需调用其中一个。需要向云端 添加设...</div></div>
+<div class="ttc" id="structLocationInfo_html_af59ee077fefdb65db12a1543dde1d21f"><div class="ttname"><a href="structLocationInfo.html#af59ee077fefdb65db12a1543dde1d21f">LocationInfo::lon</a></div><div class="ttdeci">float lon</div><div class="ttdef"><b>Definition:</b> RFDevice.h:80</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated at 2016年六月3日 星期五 09:08:32 for RestfulLinux by &#160;<a href="http://www.doxygen.org/index.html">
+生成于 2016年 七月 21日 星期四 11:54:11 , 为 RestfulLinux使用  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.7.6.1
+</a> 1.8.8
 </small></address>
-
 </body>
 </html>

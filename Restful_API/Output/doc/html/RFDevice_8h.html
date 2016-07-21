@@ -3,53 +3,43 @@
 <head>
 <meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
-<title>RestfulLinux: RFDevice.h文件参考</title>
-
+<meta name="generator" content="Doxygen 1.8.8"/>
+<title>RestfulLinux: RFDevice.h 文件参考</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
-<link href="doxygen.css" rel="stylesheet" type="text/css" />
-
-<link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="search/search.js"></script>
 <script type="text/javascript">
   $(document).ready(function() { searchBox.OnSelectItem(0); });
 </script>
-
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-<div id="top"><!-- do not remove this div! -->
-
-
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
 <div id="titlearea">
 <table cellspacing="0" cellpadding="0">
  <tbody>
  <tr style="height: 56px;">
-  
   <td id="projectlogo"><img alt="Logo" src="logo.png"/></td>
-  
-  
   <td style="padding-left: 0.5em;">
    <div id="projectname">RestfulLinux
    &#160;<span id="projectnumber">1.0.0</span>
    </div>
-   
   </td>
-  
-  
-  
  </tr>
  </tbody>
 </table>
 </div>
-
-<!-- 制作者 Doxygen 1.7.6.1 -->
+<!-- end header part -->
+<!-- 制作者 Doxygen 1.8.8 -->
 <script type="text/javascript">
 var searchBox = new SearchBox("searchBox", "search",false,'搜索');
 </script>
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>首页</span></a></li>
-      <li><a href="annotated.html"><span>数据结构</span></a></li>
+      <li><a href="annotated.html"><span>结构体</span></a></li>
       <li class="current"><a href="files.html"><span>文件</span></a></li>
       <li>
         <div id="MSearchBox" class="MSearchBoxInactive">
@@ -75,241 +65,270 @@ var searchBox = new SearchBox("searchBox", "search",false,'搜索');
       <li><a href="globals.html"><span>全局定义</span></a></li>
     </ul>
   </div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>结构体</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
 </div>
+
+</div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">数据结构</a> &#124;
+<a href="#nested-classes">结构体</a> &#124;
 <a href="#define-members">宏定义</a> &#124;
 <a href="#typedef-members">类型定义</a> &#124;
 <a href="#func-members">函数</a>  </div>
   <div class="headertitle">
-<div class="title">RFDevice.h文件参考</div>  </div>
+<div class="title">RFDevice.h 文件参考</div>  </div>
 </div><!--header-->
 <div class="contents">
 
 <p>设备操作接口封装  
 <a href="#details">更多...</a></p>
-<div class="textblock"><code>#include &lt;<a class="el" href="osDataType_8h_source.html">osAdaption/osDataType.h</a>&gt;</code><br/>
-<code>#include &lt;<a class="el" href="RFDeviceDetails_8h_source.html">RFDeviceDetails.h</a>&gt;</code><br/>
+<div class="textblock"><code>#include &lt;<a class="el" href="osDataType_8h_source.html">osAdaption/osDataType.h</a>&gt;</code><br />
+<code>#include &lt;<a class="el" href="RFDeviceDetails_8h_source.html">RFDeviceDetails.h</a>&gt;</code><br />
 </div>
-<p><a href="RFDevice_8h_source.html">浏览该文件的源代码。</a></p>
+<p><a href="RFDevice_8h_source.html">浏览源代码.</a></p>
 <table class="memberdecls">
-<tr><td colspan="2"><h2><a name="nested-classes"></a>
-数据结构</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLocationInfo.html">LocationInfo</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">位置信息定义  <a href="structLocationInfo.html#details">更多...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRFDeviceConfig.html">RFDeviceConfig</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">设备配置信息定义  <a href="structRFDeviceConfig.html#details">更多...</a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRFDeviceInfo.html">RFDeviceInfo</a></td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">设备属性定义  <a href="structRFDeviceInfo.html#details">更多...</a><br/></td></tr>
-<tr><td colspan="2"><h2><a name="define-members"></a>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
+结构体</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structLocationInfo.html">LocationInfo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">位置信息定义  <a href="structLocationInfo.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRFDeviceConfig.html">RFDeviceConfig</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">设备配置信息定义  <a href="structRFDeviceConfig.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structRFDeviceInfo.html">RFDeviceInfo</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">设备属性定义  <a href="structRFDeviceInfo.html#details">更多...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 宏定义</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RFDevice_8h.html#a31e94f1a75e55e777a9271ad02f0e171">DEVICE_NAME_LEN_MAX</a>&#160;&#160;&#160;15</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RFDevice_8h.html#a9a0595cbc9ab486fdc0dc82edbbe4f5b">DEVICE_DESC_LEN_MAX</a>&#160;&#160;&#160;127</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RFDevice_8h.html#adc7052524e5e4b14dae9691bc70ee162">DEVICE_TAGLIST_LEN_MAX</a>&#160;&#160;&#160;63</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RFDevice_8h.html#a4c3e4596a4079965b008f13658afadd0">DEVICE_ID_LEN_MAX</a>&#160;&#160;&#160;15</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RFDevice_8h.html#a3b20e0198c2eafa93ca5b0c48f6db8a3">DEVICE_API_KEY_LEN_MAX</a>&#160;&#160;&#160;63</td></tr>
+<tr class="memitem:a31e94f1a75e55e777a9271ad02f0e171"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RFDevice_8h.html#a31e94f1a75e55e777a9271ad02f0e171">DEVICE_NAME_LEN_MAX</a>&#160;&#160;&#160;15</td></tr>
+<tr class="separator:a31e94f1a75e55e777a9271ad02f0e171"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a0595cbc9ab486fdc0dc82edbbe4f5b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RFDevice_8h.html#a9a0595cbc9ab486fdc0dc82edbbe4f5b">DEVICE_DESC_LEN_MAX</a>&#160;&#160;&#160;127</td></tr>
+<tr class="separator:a9a0595cbc9ab486fdc0dc82edbbe4f5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc7052524e5e4b14dae9691bc70ee162"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RFDevice_8h.html#adc7052524e5e4b14dae9691bc70ee162">DEVICE_TAGLIST_LEN_MAX</a>&#160;&#160;&#160;63</td></tr>
+<tr class="separator:adc7052524e5e4b14dae9691bc70ee162"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c3e4596a4079965b008f13658afadd0"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RFDevice_8h.html#a4c3e4596a4079965b008f13658afadd0">DEVICE_ID_LEN_MAX</a>&#160;&#160;&#160;15</td></tr>
+<tr class="separator:a4c3e4596a4079965b008f13658afadd0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3b20e0198c2eafa93ca5b0c48f6db8a3"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RFDevice_8h.html#a3b20e0198c2eafa93ca5b0c48f6db8a3">DEVICE_API_KEY_LEN_MAX</a>&#160;&#160;&#160;63</td></tr>
+<tr class="separator:a3b20e0198c2eafa93ca5b0c48f6db8a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr><td colspan="2"><div class="groupHeader">设备信息更新项选择标识</div></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RFDevice_8h.html#adda3539feb787aaffe0c6fd6871f9e96">DEVICEINFO_MASK_TITLE</a>&#160;&#160;&#160;0x0001</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RFDevice_8h.html#aa27f1c71a41489022953fe8326f39ea8">DEVICEINFO_MASK_DESC</a>&#160;&#160;&#160;0x0002</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RFDevice_8h.html#a816a485e3b0120a6ae402f62a1543bec">DEVICEINFO_MASK_PRIVATE</a>&#160;&#160;&#160;0x0004</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RFDevice_8h.html#aea3967420653246266bf5c15ab9f4e9e">DEVICEINFO_MASK_TAGLIST</a>&#160;&#160;&#160;0x0008</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RFDevice_8h.html#a90e50ca5b5a4a84493519eb2cf232678">DEVICEINFO_MASK_LOCATION</a>&#160;&#160;&#160;0x0010</td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RFDevice_8h.html#a8effad4c0d9279e504639724fc6739d4">DEVICEINFO_MASK_ALL</a>&#160;&#160;&#160;0xFFFF</td></tr>
-<tr><td colspan="2"><h2><a name="typedef-members"></a>
+<tr class="memitem:adda3539feb787aaffe0c6fd6871f9e96"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RFDevice_8h.html#adda3539feb787aaffe0c6fd6871f9e96">DEVICEINFO_MASK_TITLE</a>&#160;&#160;&#160;0x0001</td></tr>
+<tr class="separator:adda3539feb787aaffe0c6fd6871f9e96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa27f1c71a41489022953fe8326f39ea8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RFDevice_8h.html#aa27f1c71a41489022953fe8326f39ea8">DEVICEINFO_MASK_DESC</a>&#160;&#160;&#160;0x0002</td></tr>
+<tr class="separator:aa27f1c71a41489022953fe8326f39ea8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a816a485e3b0120a6ae402f62a1543bec"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RFDevice_8h.html#a816a485e3b0120a6ae402f62a1543bec">DEVICEINFO_MASK_PRIVATE</a>&#160;&#160;&#160;0x0004</td></tr>
+<tr class="separator:a816a485e3b0120a6ae402f62a1543bec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aea3967420653246266bf5c15ab9f4e9e"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RFDevice_8h.html#aea3967420653246266bf5c15ab9f4e9e">DEVICEINFO_MASK_TAGLIST</a>&#160;&#160;&#160;0x0008</td></tr>
+<tr class="separator:aea3967420653246266bf5c15ab9f4e9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90e50ca5b5a4a84493519eb2cf232678"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RFDevice_8h.html#a90e50ca5b5a4a84493519eb2cf232678">DEVICEINFO_MASK_LOCATION</a>&#160;&#160;&#160;0x0010</td></tr>
+<tr class="separator:a90e50ca5b5a4a84493519eb2cf232678"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8effad4c0d9279e504639724fc6739d4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RFDevice_8h.html#a8effad4c0d9279e504639724fc6739d4">DEVICEINFO_MASK_ALL</a>&#160;&#160;&#160;0xFFFF</td></tr>
+<tr class="separator:a8effad4c0d9279e504639724fc6739d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="typedef-members"></a>
 类型定义</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a06cfed03743d6a078eeb63f3099fb151"></a><!-- doxytag: member="RFDevice.h::pLocationInfo" ref="a06cfed03743d6a078eeb63f3099fb151" args="" -->
+<tr class="memitem:a06cfed03743d6a078eeb63f3099fb151"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a06cfed03743d6a078eeb63f3099fb151"></a>
 typedef struct <a class="el" href="structLocationInfo.html">LocationInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>pLocationInfo</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a77843adb5b61b3a25f333e27f729a897"></a><!-- doxytag: member="RFDevice.h::pRFDeviceConfig" ref="a77843adb5b61b3a25f333e27f729a897" args="" -->
+<tr class="separator:a06cfed03743d6a078eeb63f3099fb151"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77843adb5b61b3a25f333e27f729a897"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a77843adb5b61b3a25f333e27f729a897"></a>
 typedef struct <a class="el" href="structRFDeviceConfig.html">RFDeviceConfig</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>pRFDeviceConfig</b></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acef653e9c34d25c797f478facf13033b"></a><!-- doxytag: member="RFDevice.h::pRFDeviceInfo" ref="acef653e9c34d25c797f478facf13033b" args="" -->
+<tr class="separator:a77843adb5b61b3a25f333e27f729a897"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acef653e9c34d25c797f478facf13033b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acef653e9c34d25c797f478facf13033b"></a>
 typedef struct <a class="el" href="structRFDeviceInfo.html">RFDeviceInfo</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>pRFDeviceInfo</b></td></tr>
-<tr><td colspan="2"><h2><a name="func-members"></a>
+<tr class="separator:acef653e9c34d25c797f478facf13033b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 函数</h2></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RFDevice_8h.html#a02926dbce65bd9880b03be1af5cbfa77">RFDevice_Create</a> (<a class="el" href="structRFDeviceConfig.html">RFDeviceConfig</a> *devConfig, int8 *deviceID)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">新增设备。设备创建成功后，用户应保存返回的设备ID，当下一次上线时， 无需重新调用设备创建接口，直接使用<a class="el" href="RFDevice_8h.html#a8c09fa856caf5347b63dafbf9ed1df4a">RFDevice_Init</a> 即可。 本接口包含<a class="el" href="RFDevice_8h.html#a8c09fa856caf5347b63dafbf9ed1df4a">RFDevice_Init</a> 的功能。  <a href="#a02926dbce65bd9880b03be1af5cbfa77"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RFDevice_8h.html#a8c09fa856caf5347b63dafbf9ed1df4a">RFDevice_Init</a> (int8 *deviceID, int8 *masterKey)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">设备信息初始化，和<a class="el" href="RFDevice_8h.html#a02926dbce65bd9880b03be1af5cbfa77">RFDevice_Create</a> 接口只需调用其中一个。需要向云端 添加设备时用Create接口，其它情况用Init接口  <a href="#a8c09fa856caf5347b63dafbf9ed1df4a"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RFDevice_8h.html#a2adeb6c8fdf317ce85ac17a6a4cfa681">RFDevice_UpdateInfo</a> (<a class="el" href="structRFDeviceConfig.html">RFDeviceConfig</a> *devConfig, uint32 updateFlag)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">更新设备信息  <a href="#a2adeb6c8fdf317ce85ac17a6a4cfa681"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RFDevice_8h.html#aa827474024c22d75e07df176c60acc07">RFDevice_View</a> (int8 *APIKey, <a class="el" href="structRFDeviceDetails.html">RFDeviceDetails</a> *details)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">查询设备，只限查询本设备  <a href="#aa827474024c22d75e07df176c60acc07"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RFDevice_8h.html#ac52c59eec134c6877e8dde7b1b18ac02">RFDevice_FreeDetails</a> (<a class="el" href="structRFDeviceDetails.html">RFDeviceDetails</a> *details)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">执行<a class="el" href="RFDevice_8h.html#aa827474024c22d75e07df176c60acc07">RFDevice_View</a> 操作后，必须调用该接口释放空间  <a href="#ac52c59eec134c6877e8dde7b1b18ac02"></a><br/></td></tr>
-<tr><td class="memItemLeft" align="right" valign="top">int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RFDevice_8h.html#afefa76d28d4681972e9c99333b0bbf8e">RFDevice_Delete</a> (int8 *APIKey)</td></tr>
-<tr><td class="mdescLeft">&#160;</td><td class="mdescRight">从云端删除指定设备  <a href="#afefa76d28d4681972e9c99333b0bbf8e"></a><br/></td></tr>
+<tr class="memitem:a02926dbce65bd9880b03be1af5cbfa77"><td class="memItemLeft" align="right" valign="top">int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RFDevice_8h.html#a02926dbce65bd9880b03be1af5cbfa77">RFDevice_Create</a> (<a class="el" href="structRFDeviceConfig.html">RFDeviceConfig</a> *devConfig, int8 *deviceID)</td></tr>
+<tr class="memdesc:a02926dbce65bd9880b03be1af5cbfa77"><td class="mdescLeft">&#160;</td><td class="mdescRight">新增设备。设备创建成功后，用户应保存返回的设备ID，当下一次上线时， 无需重新调用设备创建接口，直接使用<a class="el" href="RFDevice_8h.html#a8c09fa856caf5347b63dafbf9ed1df4a">RFDevice_Init</a> 即可。 本接口包含<a class="el" href="RFDevice_8h.html#a8c09fa856caf5347b63dafbf9ed1df4a">RFDevice_Init</a> 的功能。  <a href="#a02926dbce65bd9880b03be1af5cbfa77">更多...</a><br /></td></tr>
+<tr class="separator:a02926dbce65bd9880b03be1af5cbfa77"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8c09fa856caf5347b63dafbf9ed1df4a"><td class="memItemLeft" align="right" valign="top">int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RFDevice_8h.html#a8c09fa856caf5347b63dafbf9ed1df4a">RFDevice_Init</a> (int8 *deviceID, int8 *masterKey)</td></tr>
+<tr class="memdesc:a8c09fa856caf5347b63dafbf9ed1df4a"><td class="mdescLeft">&#160;</td><td class="mdescRight">设备信息初始化，和<a class="el" href="RFDevice_8h.html#a02926dbce65bd9880b03be1af5cbfa77">RFDevice_Create</a> 接口只需调用其中一个。需要向云端 添加设备时用Create接口，其它情况用Init接口  <a href="#a8c09fa856caf5347b63dafbf9ed1df4a">更多...</a><br /></td></tr>
+<tr class="separator:a8c09fa856caf5347b63dafbf9ed1df4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2adeb6c8fdf317ce85ac17a6a4cfa681"><td class="memItemLeft" align="right" valign="top">int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RFDevice_8h.html#a2adeb6c8fdf317ce85ac17a6a4cfa681">RFDevice_UpdateInfo</a> (<a class="el" href="structRFDeviceConfig.html">RFDeviceConfig</a> *devConfig, uint32 updateFlag)</td></tr>
+<tr class="memdesc:a2adeb6c8fdf317ce85ac17a6a4cfa681"><td class="mdescLeft">&#160;</td><td class="mdescRight">更新设备信息  <a href="#a2adeb6c8fdf317ce85ac17a6a4cfa681">更多...</a><br /></td></tr>
+<tr class="separator:a2adeb6c8fdf317ce85ac17a6a4cfa681"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa827474024c22d75e07df176c60acc07"><td class="memItemLeft" align="right" valign="top">int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RFDevice_8h.html#aa827474024c22d75e07df176c60acc07">RFDevice_View</a> (int8 *APIKey, <a class="el" href="structRFDeviceDetails.html">RFDeviceDetails</a> *details)</td></tr>
+<tr class="memdesc:aa827474024c22d75e07df176c60acc07"><td class="mdescLeft">&#160;</td><td class="mdescRight">查询设备，只限查询本设备  <a href="#aa827474024c22d75e07df176c60acc07">更多...</a><br /></td></tr>
+<tr class="separator:aa827474024c22d75e07df176c60acc07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac52c59eec134c6877e8dde7b1b18ac02"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RFDevice_8h.html#ac52c59eec134c6877e8dde7b1b18ac02">RFDevice_FreeDetails</a> (<a class="el" href="structRFDeviceDetails.html">RFDeviceDetails</a> *details)</td></tr>
+<tr class="memdesc:ac52c59eec134c6877e8dde7b1b18ac02"><td class="mdescLeft">&#160;</td><td class="mdescRight">执行<a class="el" href="RFDevice_8h.html#aa827474024c22d75e07df176c60acc07">RFDevice_View</a> 操作后，必须调用该接口释放空间  <a href="#ac52c59eec134c6877e8dde7b1b18ac02">更多...</a><br /></td></tr>
+<tr class="separator:ac52c59eec134c6877e8dde7b1b18ac02"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afefa76d28d4681972e9c99333b0bbf8e"><td class="memItemLeft" align="right" valign="top">int32&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="RFDevice_8h.html#afefa76d28d4681972e9c99333b0bbf8e">RFDevice_Delete</a> (int8 *APIKey)</td></tr>
+<tr class="memdesc:afefa76d28d4681972e9c99333b0bbf8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">从云端删除指定设备  <a href="#afefa76d28d4681972e9c99333b0bbf8e">更多...</a><br /></td></tr>
+<tr class="separator:afefa76d28d4681972e9c99333b0bbf8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<hr/><a name="details" id="details"></a><h2>详细描述</h2>
+<a name="details" id="details"></a><h2 class="groupheader">详细描述</h2>
 <div class="textblock"><p>设备操作接口封装 </p>
 <p>Copyright (c), 2012~2016 iot.10086.cn All Rights Reserved</p>
-<dl class="author"><dt><b>作者:</b></dt><dd>宋伟&lt;<a href="mailto:songwei1@iot.chinamobile.com">songwei1@iot.chinamobile.com</a>&gt; </dd></dl>
-<dl class="date"><dt><b>日期:</b></dt><dd>2016/05/18 </dd></dl>
-<dl class="version"><dt><b>版本:</b></dt><dd>1.0.0 </dd></dl>
-<dl class="user"><dt><b>Revision History:</b></dt><dd>Date Author Revised.Ver Notes<br/>
- 2015/5/18 SongWei 1.0.0 file created<br/>
- </dd></dl>
-</div><hr/><h2>宏定义文档</h2>
-<a class="anchor" id="a3b20e0198c2eafa93ca5b0c48f6db8a3"></a><!-- doxytag: member="RFDevice.h::DEVICE_API_KEY_LEN_MAX" ref="a3b20e0198c2eafa93ca5b0c48f6db8a3" args="" -->
+<dl class="section author"><dt>作者</dt><dd>宋伟<a href="#" onclick="location.href='mai'+'lto:'+'son'+'gw'+'ei1'+'@i'+'ot.'+'ch'+'ina'+'mo'+'bil'+'e.'+'com'; return false;">songw<span style="display: none;">.nosp@m.</span>ei1@<span style="display: none;">.nosp@m.</span>iot.c<span style="display: none;">.nosp@m.</span>hina<span style="display: none;">.nosp@m.</span>mobil<span style="display: none;">.nosp@m.</span>e.co<span style="display: none;">.nosp@m.</span>m</a> </dd></dl>
+<dl class="section date"><dt>日期</dt><dd>2016/05/18 </dd></dl>
+<dl class="section version"><dt>版本</dt><dd>1.0.0 </dd></dl>
+<dl class="section user"><dt>Revision History:</dt><dd>Date Author Revised.Ver Notes<br />
+ 2015/5/18 SongWei 1.0.0 file created<br />
+</dd></dl>
+</div><h2 class="groupheader">宏定义说明</h2>
+<a class="anchor" id="a3b20e0198c2eafa93ca5b0c48f6db8a3"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="RFDevice_8h.html#a3b20e0198c2eafa93ca5b0c48f6db8a3">DEVICE_API_KEY_LEN_MAX</a>&#160;&#160;&#160;63</td>
+          <td class="memname">#define DEVICE_API_KEY_LEN_MAX&#160;&#160;&#160;63</td>
         </tr>
       </table>
-</div>
-<div class="memdoc">
+</div><div class="memdoc">
 <p>API Key长度定义 </p>
 
 </div>
 </div>
-<a class="anchor" id="a9a0595cbc9ab486fdc0dc82edbbe4f5b"></a><!-- doxytag: member="RFDevice.h::DEVICE_DESC_LEN_MAX" ref="a9a0595cbc9ab486fdc0dc82edbbe4f5b" args="" -->
+<a class="anchor" id="a9a0595cbc9ab486fdc0dc82edbbe4f5b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="RFDevice_8h.html#a9a0595cbc9ab486fdc0dc82edbbe4f5b">DEVICE_DESC_LEN_MAX</a>&#160;&#160;&#160;127</td>
+          <td class="memname">#define DEVICE_DESC_LEN_MAX&#160;&#160;&#160;127</td>
         </tr>
       </table>
-</div>
-<div class="memdoc">
+</div><div class="memdoc">
 <p>设备描述信息长度定义 </p>
 
 </div>
 </div>
-<a class="anchor" id="a4c3e4596a4079965b008f13658afadd0"></a><!-- doxytag: member="RFDevice.h::DEVICE_ID_LEN_MAX" ref="a4c3e4596a4079965b008f13658afadd0" args="" -->
+<a class="anchor" id="a4c3e4596a4079965b008f13658afadd0"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="RFDevice_8h.html#a4c3e4596a4079965b008f13658afadd0">DEVICE_ID_LEN_MAX</a>&#160;&#160;&#160;15</td>
+          <td class="memname">#define DEVICE_ID_LEN_MAX&#160;&#160;&#160;15</td>
         </tr>
       </table>
-</div>
-<div class="memdoc">
+</div><div class="memdoc">
 <p>云端分配的设备ID长度定义 </p>
 
 </div>
 </div>
-<a class="anchor" id="a31e94f1a75e55e777a9271ad02f0e171"></a><!-- doxytag: member="RFDevice.h::DEVICE_NAME_LEN_MAX" ref="a31e94f1a75e55e777a9271ad02f0e171" args="" -->
+<a class="anchor" id="a31e94f1a75e55e777a9271ad02f0e171"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="RFDevice_8h.html#a31e94f1a75e55e777a9271ad02f0e171">DEVICE_NAME_LEN_MAX</a>&#160;&#160;&#160;15</td>
+          <td class="memname">#define DEVICE_NAME_LEN_MAX&#160;&#160;&#160;15</td>
         </tr>
       </table>
-</div>
-<div class="memdoc">
+</div><div class="memdoc">
 <p>设备名长度定义 </p>
 
 </div>
 </div>
-<a class="anchor" id="adc7052524e5e4b14dae9691bc70ee162"></a><!-- doxytag: member="RFDevice.h::DEVICE_TAGLIST_LEN_MAX" ref="adc7052524e5e4b14dae9691bc70ee162" args="" -->
+<a class="anchor" id="adc7052524e5e4b14dae9691bc70ee162"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="RFDevice_8h.html#adc7052524e5e4b14dae9691bc70ee162">DEVICE_TAGLIST_LEN_MAX</a>&#160;&#160;&#160;63</td>
+          <td class="memname">#define DEVICE_TAGLIST_LEN_MAX&#160;&#160;&#160;63</td>
         </tr>
       </table>
-</div>
-<div class="memdoc">
+</div><div class="memdoc">
 <p>设备标签长度定义 </p>
 
 </div>
 </div>
-<a class="anchor" id="a8effad4c0d9279e504639724fc6739d4"></a><!-- doxytag: member="RFDevice.h::DEVICEINFO_MASK_ALL" ref="a8effad4c0d9279e504639724fc6739d4" args="" -->
+<a class="anchor" id="a8effad4c0d9279e504639724fc6739d4"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="RFDevice_8h.html#a8effad4c0d9279e504639724fc6739d4">DEVICEINFO_MASK_ALL</a>&#160;&#160;&#160;0xFFFF</td>
+          <td class="memname">#define DEVICEINFO_MASK_ALL&#160;&#160;&#160;0xFFFF</td>
         </tr>
       </table>
-</div>
-<div class="memdoc">
+</div><div class="memdoc">
 <p>更新以上所有信息 </p>
 
 </div>
 </div>
-<a class="anchor" id="aa27f1c71a41489022953fe8326f39ea8"></a><!-- doxytag: member="RFDevice.h::DEVICEINFO_MASK_DESC" ref="aa27f1c71a41489022953fe8326f39ea8" args="" -->
+<a class="anchor" id="aa27f1c71a41489022953fe8326f39ea8"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="RFDevice_8h.html#aa27f1c71a41489022953fe8326f39ea8">DEVICEINFO_MASK_DESC</a>&#160;&#160;&#160;0x0002</td>
+          <td class="memname">#define DEVICEINFO_MASK_DESC&#160;&#160;&#160;0x0002</td>
         </tr>
       </table>
-</div>
-<div class="memdoc">
+</div><div class="memdoc">
 <p>更新设备描述信息 </p>
 
 </div>
 </div>
-<a class="anchor" id="a90e50ca5b5a4a84493519eb2cf232678"></a><!-- doxytag: member="RFDevice.h::DEVICEINFO_MASK_LOCATION" ref="a90e50ca5b5a4a84493519eb2cf232678" args="" -->
+<a class="anchor" id="a90e50ca5b5a4a84493519eb2cf232678"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="RFDevice_8h.html#a90e50ca5b5a4a84493519eb2cf232678">DEVICEINFO_MASK_LOCATION</a>&#160;&#160;&#160;0x0010</td>
+          <td class="memname">#define DEVICEINFO_MASK_LOCATION&#160;&#160;&#160;0x0010</td>
         </tr>
       </table>
-</div>
-<div class="memdoc">
+</div><div class="memdoc">
 <p>更新设备位置信息 </p>
 
 </div>
 </div>
-<a class="anchor" id="a816a485e3b0120a6ae402f62a1543bec"></a><!-- doxytag: member="RFDevice.h::DEVICEINFO_MASK_PRIVATE" ref="a816a485e3b0120a6ae402f62a1543bec" args="" -->
+<a class="anchor" id="a816a485e3b0120a6ae402f62a1543bec"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="RFDevice_8h.html#a816a485e3b0120a6ae402f62a1543bec">DEVICEINFO_MASK_PRIVATE</a>&#160;&#160;&#160;0x0004</td>
+          <td class="memname">#define DEVICEINFO_MASK_PRIVATE&#160;&#160;&#160;0x0004</td>
         </tr>
       </table>
-</div>
-<div class="memdoc">
+</div><div class="memdoc">
 <p>更新设备是否属于私有设备 </p>
 
 </div>
 </div>
-<a class="anchor" id="aea3967420653246266bf5c15ab9f4e9e"></a><!-- doxytag: member="RFDevice.h::DEVICEINFO_MASK_TAGLIST" ref="aea3967420653246266bf5c15ab9f4e9e" args="" -->
+<a class="anchor" id="aea3967420653246266bf5c15ab9f4e9e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="RFDevice_8h.html#aea3967420653246266bf5c15ab9f4e9e">DEVICEINFO_MASK_TAGLIST</a>&#160;&#160;&#160;0x0008</td>
+          <td class="memname">#define DEVICEINFO_MASK_TAGLIST&#160;&#160;&#160;0x0008</td>
         </tr>
       </table>
-</div>
-<div class="memdoc">
+</div><div class="memdoc">
 <p>更新设备标签信息 </p>
 
 </div>
 </div>
-<a class="anchor" id="adda3539feb787aaffe0c6fd6871f9e96"></a><!-- doxytag: member="RFDevice.h::DEVICEINFO_MASK_TITLE" ref="adda3539feb787aaffe0c6fd6871f9e96" args="" -->
+<a class="anchor" id="adda3539feb787aaffe0c6fd6871f9e96"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define <a class="el" href="RFDevice_8h.html#adda3539feb787aaffe0c6fd6871f9e96">DEVICEINFO_MASK_TITLE</a>&#160;&#160;&#160;0x0001</td>
+          <td class="memname">#define DEVICEINFO_MASK_TITLE&#160;&#160;&#160;0x0001</td>
         </tr>
       </table>
-</div>
-<div class="memdoc">
+</div><div class="memdoc">
 <p>更新设备名 </p>
 
 </div>
 </div>
-<hr/><h2>函数文档</h2>
-<a class="anchor" id="a02926dbce65bd9880b03be1af5cbfa77"></a><!-- doxytag: member="RFDevice.h::RFDevice_Create" ref="a02926dbce65bd9880b03be1af5cbfa77" args="(RFDeviceConfig *devConfig, int8 *deviceID)" -->
+<h2 class="groupheader">函数说明</h2>
+<a class="anchor" id="a02926dbce65bd9880b03be1af5cbfa77"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int32 <a class="el" href="RFDevice_8h.html#a02926dbce65bd9880b03be1af5cbfa77">RFDevice_Create</a> </td>
+          <td class="memname">int32 RFDevice_Create </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structRFDeviceConfig.html">RFDeviceConfig</a> *&#160;</td>
           <td class="paramname"><em>devConfig</em>, </td>
@@ -326,64 +345,61 @@ typedef struct <a class="el" href="structRFDeviceInfo.html">RFDeviceInfo</a> *&#
           <td></td><td></td>
         </tr>
       </table>
-</div>
-<div class="memdoc">
+</div><div class="memdoc">
 
 <p>新增设备。设备创建成功后，用户应保存返回的设备ID，当下一次上线时， 无需重新调用设备创建接口，直接使用<a class="el" href="RFDevice_8h.html#a8c09fa856caf5347b63dafbf9ed1df4a">RFDevice_Init</a> 即可。 本接口包含<a class="el" href="RFDevice_8h.html#a8c09fa856caf5347b63dafbf9ed1df4a">RFDevice_Init</a> 的功能。 </p>
-<dl class="params"><dt><b>参数:</b></dt><dd>
+<dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramname">devInfo</td><td>需要新增设备的设备信息 </td></tr>
     <tr><td class="paramname">deviceID</td><td>返回设备ID。缓冲区传入前需初始化</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="return"><dt><b>返回:</b></dt><dd>参见<a class="el" href="OSAErrno_8h.html">OSAErrno.h</a> </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>参见<a class="el" href="OSAErrno_8h.html">OSAErrno.h</a> </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="afefa76d28d4681972e9c99333b0bbf8e"></a><!-- doxytag: member="RFDevice.h::RFDevice_Delete" ref="afefa76d28d4681972e9c99333b0bbf8e" args="(int8 *APIKey)" -->
+<a class="anchor" id="afefa76d28d4681972e9c99333b0bbf8e"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int32 <a class="el" href="RFDevice_8h.html#afefa76d28d4681972e9c99333b0bbf8e">RFDevice_Delete</a> </td>
+          <td class="memname">int32 RFDevice_Delete </td>
           <td>(</td>
           <td class="paramtype">int8 *&#160;</td>
           <td class="paramname"><em>APIKey</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-</div>
-<div class="memdoc">
+</div><div class="memdoc">
 
 <p>从云端删除指定设备 </p>
-<dl class="params"><dt><b>参数:</b></dt><dd>
+<dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramname">APIKey</td><td>有权限进行删除操作的APIKey</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="return"><dt><b>返回:</b></dt><dd>参见<a class="el" href="OSAErrno_8h.html">OSAErrno.h</a> </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>参见<a class="el" href="OSAErrno_8h.html">OSAErrno.h</a> </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="ac52c59eec134c6877e8dde7b1b18ac02"></a><!-- doxytag: member="RFDevice.h::RFDevice_FreeDetails" ref="ac52c59eec134c6877e8dde7b1b18ac02" args="(RFDeviceDetails *details)" -->
+<a class="anchor" id="ac52c59eec134c6877e8dde7b1b18ac02"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void <a class="el" href="RFDevice_8h.html#ac52c59eec134c6877e8dde7b1b18ac02">RFDevice_FreeDetails</a> </td>
+          <td class="memname">void RFDevice_FreeDetails </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structRFDeviceDetails.html">RFDeviceDetails</a> *&#160;</td>
           <td class="paramname"><em>details</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-</div>
-<div class="memdoc">
+</div><div class="memdoc">
 
 <p>执行<a class="el" href="RFDevice_8h.html#aa827474024c22d75e07df176c60acc07">RFDevice_View</a> 操作后，必须调用该接口释放空间 </p>
-<dl class="params"><dt><b>参数:</b></dt><dd>
+<dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramname">details</td><td>传入View接口的设备详细信息指针 </td></tr>
   </table>
@@ -392,12 +408,12 @@ typedef struct <a class="el" href="structRFDeviceInfo.html">RFDeviceInfo</a> *&#
 
 </div>
 </div>
-<a class="anchor" id="a8c09fa856caf5347b63dafbf9ed1df4a"></a><!-- doxytag: member="RFDevice.h::RFDevice_Init" ref="a8c09fa856caf5347b63dafbf9ed1df4a" args="(int8 *deviceID, int8 *masterKey)" -->
+<a class="anchor" id="a8c09fa856caf5347b63dafbf9ed1df4a"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int32 <a class="el" href="RFDevice_8h.html#a8c09fa856caf5347b63dafbf9ed1df4a">RFDevice_Init</a> </td>
+          <td class="memname">int32 RFDevice_Init </td>
           <td>(</td>
           <td class="paramtype">int8 *&#160;</td>
           <td class="paramname"><em>deviceID</em>, </td>
@@ -414,27 +430,26 @@ typedef struct <a class="el" href="structRFDeviceInfo.html">RFDeviceInfo</a> *&#
           <td></td><td></td>
         </tr>
       </table>
-</div>
-<div class="memdoc">
+</div><div class="memdoc">
 
 <p>设备信息初始化，和<a class="el" href="RFDevice_8h.html#a02926dbce65bd9880b03be1af5cbfa77">RFDevice_Create</a> 接口只需调用其中一个。需要向云端 添加设备时用Create接口，其它情况用Init接口 </p>
-<dl class="params"><dt><b>参数:</b></dt><dd>
+<dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramname">deviceID</td><td>设备创建时云端返回的ID </td></tr>
     <tr><td class="paramname">masterKey</td><td>云端项目的MasterKey</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="return"><dt><b>返回:</b></dt><dd>参考OSAErrno.h </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>参考OSAErrno.h </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="a2adeb6c8fdf317ce85ac17a6a4cfa681"></a><!-- doxytag: member="RFDevice.h::RFDevice_UpdateInfo" ref="a2adeb6c8fdf317ce85ac17a6a4cfa681" args="(RFDeviceConfig *devConfig, uint32 updateFlag)" -->
+<a class="anchor" id="a2adeb6c8fdf317ce85ac17a6a4cfa681"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int32 <a class="el" href="RFDevice_8h.html#a2adeb6c8fdf317ce85ac17a6a4cfa681">RFDevice_UpdateInfo</a> </td>
+          <td class="memname">int32 RFDevice_UpdateInfo </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structRFDeviceConfig.html">RFDeviceConfig</a> *&#160;</td>
           <td class="paramname"><em>devConfig</em>, </td>
@@ -451,27 +466,26 @@ typedef struct <a class="el" href="structRFDeviceInfo.html">RFDeviceInfo</a> *&#
           <td></td><td></td>
         </tr>
       </table>
-</div>
-<div class="memdoc">
+</div><div class="memdoc">
 
 <p>更新设备信息 </p>
-<dl class="params"><dt><b>参数:</b></dt><dd>
+<dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramname">devConfig</td><td>需要更新设备的设备信息。 </td></tr>
     <tr><td class="paramname">updateFlag</td><td>指定需要更新的项，可同时更新多项内容。Flag指定的设备 信息项，需要在devConfig中正确填写</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="return"><dt><b>返回:</b></dt><dd>参见<a class="el" href="OSAErrno_8h.html">OSAErrno.h</a> </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>参见<a class="el" href="OSAErrno_8h.html">OSAErrno.h</a> </dd></dl>
 
 </div>
 </div>
-<a class="anchor" id="aa827474024c22d75e07df176c60acc07"></a><!-- doxytag: member="RFDevice.h::RFDevice_View" ref="aa827474024c22d75e07df176c60acc07" args="(int8 *APIKey, RFDeviceDetails *details)" -->
+<a class="anchor" id="aa827474024c22d75e07df176c60acc07"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int32 <a class="el" href="RFDevice_8h.html#aa827474024c22d75e07df176c60acc07">RFDevice_View</a> </td>
+          <td class="memname">int32 RFDevice_View </td>
           <td>(</td>
           <td class="paramtype">int8 *&#160;</td>
           <td class="paramname"><em>APIKey</em>, </td>
@@ -488,43 +502,26 @@ typedef struct <a class="el" href="structRFDeviceInfo.html">RFDeviceInfo</a> *&#
           <td></td><td></td>
         </tr>
       </table>
-</div>
-<div class="memdoc">
+</div><div class="memdoc">
 
 <p>查询设备，只限查询本设备 </p>
-<dl class="params"><dt><b>参数:</b></dt><dd>
+<dl class="params"><dt>参数</dt><dd>
   <table class="params">
     <tr><td class="paramname">APIKey</td><td>有权限查看设备的Key </td></tr>
     <tr><td class="paramname">details</td><td>返回设备详细信息</td></tr>
   </table>
   </dd>
 </dl>
-<dl class="return"><dt><b>返回:</b></dt><dd>参见<a class="el" href="OSAErrno_8h.html">OSAErrno.h</a> </dd></dl>
+<dl class="section return"><dt>返回</dt><dd>参见<a class="el" href="OSAErrno_8h.html">OSAErrno.h</a> </dd></dl>
 
 </div>
 </div>
 </div><!-- contents -->
-<!-- window showing the filter options -->
-<div id="MSearchSelectWindow"
-     onmouseover="return searchBox.OnSearchSelectShow()"
-     onmouseout="return searchBox.OnSearchSelectHide()"
-     onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>全部</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>数据结构</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>文件</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>函数</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>变量</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>枚举</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>枚举值</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>宏定义</a></div>
-
-<!-- iframe showing the search results (closed by default) -->
-<div id="MSearchResultsWindow">
-<iframe src="javascript:void(0)" frameborder="0" 
-        name="MSearchResults" id="MSearchResults">
-</iframe>
-</div>
-
-
-
+<!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated at 2016年六月3日 星期五 09:08:32 for RestfulLinux by &#160;<a href="http://www.doxygen.org/index.html">
+生成于 2016年 七月 21日 星期四 11:54:11 , 为 RestfulLinux使用  &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
-</a> 1.7.6.1
+</a> 1.8.8
 </small></address>
-
 </body>
 </html>
