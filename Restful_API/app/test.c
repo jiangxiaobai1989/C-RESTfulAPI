@@ -4,10 +4,12 @@
  * @brief 
  * @author 		宋伟<songwei1@iot.chinamobile.com>
  * @date 		2016/05/23
+ * @update      2016/07/21
  * @version 	1.0.0
  * @par Revision History:
  * 		Date			Author		Revised.Ver		Notes
- * 		2015/5/23		宋伟		  1.0.0			file created
+ * 		2016/5/23		宋伟		  1.0.0			file created
+ * 		2016/7/21       江宇航        1.0.1         file modifed
  ******************************************************************************/
 
 
@@ -32,9 +34,9 @@
 /*****************************************************************************/
 /* Local Definitions ( Constant and Macro )                                  */
 /*****************************************************************************/
-#define DEVICE_TITLE ""
+#define DEVICE_TITLE "Testing"
 #define MASTER_KEY ""
-#define TAGLIST	""
+#define TAGLIST	"test"
 
 
 /*****************************************************************************/
@@ -169,6 +171,10 @@ int main(int argc, char **argv[])
 		RFDevice_Delete(MASTER_KEY);
 		printf("Delete Device !\n");
 	}
+    else
+    {
+        printf("Create device failed!");
+    }
     return 0;
 }
 
